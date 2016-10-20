@@ -19,11 +19,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let coord = locationManager.location?.coordinate
         
         if let lat = coord?.latitude {
-            print("Lattitude: " + String(lat))
+            print("Latitude: " + String(lat))
         }
         
         if let long = coord?.longitude {
-            print("longitude: " + String(long))
+            print("Longitude: " + String(long))
         }
     }
     
