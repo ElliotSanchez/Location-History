@@ -19,15 +19,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="X4w-Nt-VyQ"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsi-Wr-kpg">
+                                <items>
+                                    <navigationItem title="Location History" id="R8n-B5-9qz">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KnJ-xH-fx5">
+                                            <connections>
+                                                <action selector="addLocationTapped:" destination="BYZ-38-t0r" id="PaN-h3-Wdp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="X4w-Nt-VyQ" secondAttribute="trailing" id="0sX-p0-ckm"/>
                             <constraint firstItem="X4w-Nt-VyQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="302-ip-qCi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X4w-Nt-VyQ" secondAttribute="bottom" id="4c2-pr-NE5"/>
-                            <constraint firstItem="X4w-Nt-VyQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PAE-cX-3Z6"/>
+                            <constraint firstItem="xsi-Wr-kpg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Nl-ik-MOJ"/>
+                            <constraint firstAttribute="trailing" secondItem="xsi-Wr-kpg" secondAttribute="trailing" id="8mb-7r-ujG"/>
+                            <constraint firstItem="X4w-Nt-VyQ" firstAttribute="top" secondItem="xsi-Wr-kpg" secondAttribute="bottom" id="F0J-Jd-oCb"/>
+                            <constraint firstItem="xsi-Wr-kpg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="F9Q-YT-IjS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myMapView" destination="X4w-Nt-VyQ" id="FEM-vN-F5Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
