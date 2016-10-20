@@ -14,6 +14,7 @@
 		F4D96B8C1DB9606800881AE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D96B8A1DB9606800881AE4 /* LaunchScreen.storyboard */; };
 		F4D96B971DB9606800881AE4 /* Location_HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D96B961DB9606800881AE4 /* Location_HistoryTests.swift */; };
 		F4D96BA21DB9606800881AE4 /* Location_HistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D96BA11DB9606800881AE4 /* Location_HistoryUITests.swift */; };
+		F4D96BB11DB9617C00881AE4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D96BB01DB9617C00881AE4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F4D96B9D1DB9606800881AE4 /* Location HistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location HistoryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D96BA11DB9606800881AE4 /* Location_HistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_HistoryUITests.swift; sourceTree = "<group>"; };
 		F4D96BA31DB9606800881AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D96BB01DB9617C00881AE4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D96BB11DB9617C00881AE4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				F4D96B951DB9606800881AE4 /* Location HistoryTests */,
 				F4D96BA01DB9606800881AE4 /* Location HistoryUITests */,
 				F4D96B7F1DB9606800881AE4 /* Products */,
+				F4D96BAF1DB9617C00881AE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				F4D96BA31DB9606800881AE4 /* Info.plist */,
 			);
 			path = "Location HistoryUITests";
+			sourceTree = "<group>";
+		};
+		F4D96BAF1DB9617C00881AE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4D96BB01DB9617C00881AE4 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
