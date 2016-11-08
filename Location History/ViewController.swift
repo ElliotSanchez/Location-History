@@ -19,12 +19,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let coord = locationManager.location?.coordinate
         
         if let lat = coord?.latitude {
-            print("Latitude: " + String(lat))
+            if let long = coord?.longitude {
+                DataStore().storeDataPoint(latitude: String(lat), longitude: String(long))
+            }
         }
         
-        if let long = coord?.longitude {
-            print("Longitude: " + String(long))
-        }
     }
     
     
@@ -40,6 +39,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Ask and then update location upon loading
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        //
+        if let oldCoordinates = DataStore().getLastLocation() {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate.latitude = Double(oldCoordinates.latitude)!
+            annotation.coordinate.longitude = Double(oldCoordinates.longitude)!
+            
+            annotation.title = "Previous Location"
+            annotation.subtitle = (String(oldCoordinates.latitude) + ":" + String(oldCoordinates.longitude))
+            myMapView.addAnnotation(annotation)
+        }
     }
 
     // Update map or display warning upon change of location authorization

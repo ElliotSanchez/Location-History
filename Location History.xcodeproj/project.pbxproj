@@ -16,6 +16,7 @@
 		F4D96BA21DB9606800881AE4 /* Location_HistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D96BA11DB9606800881AE4 /* Location_HistoryUITests.swift */; };
 		F4D96BB11DB9617C00881AE4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D96BB01DB9617C00881AE4 /* MapKit.framework */; };
 		F4D96BB31DB96DFB00881AE4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D96BB21DB96DFB00881AE4 /* DataModel.swift */; };
+		F4D96BB51DB96F3800881AE4 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D96BB41DB96F3800881AE4 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F4D96BA31DB9606800881AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4D96BB01DB9617C00881AE4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F4D96BB21DB96DFB00881AE4 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		F4D96BB41DB96F3800881AE4 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				F4D96B8A1DB9606800881AE4 /* LaunchScreen.storyboard */,
 				F4D96B8D1DB9606800881AE4 /* Info.plist */,
 				F4D96BB21DB96DFB00881AE4 /* DataModel.swift */,
+				F4D96BB41DB96F3800881AE4 /* DataStore.swift */,
 			);
 			path = "Location History";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4D96B841DB9606800881AE4 /* ViewController.swift in Sources */,
+				F4D96BB51DB96F3800881AE4 /* DataStore.swift in Sources */,
 				F4D96B821DB9606800881AE4 /* AppDelegate.swift in Sources */,
 				F4D96BB31DB96DFB00881AE4 /* DataModel.swift in Sources */,
 			);
